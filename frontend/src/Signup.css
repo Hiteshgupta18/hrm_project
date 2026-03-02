@@ -1,0 +1,249 @@
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 40px 20px;
+}
+
+.signup-wrapper {
+  display: flex;
+  position: relative;
+  width: 100%;
+  max-width: 1800px;
+  min-height: 750px;
+  align-items: center;
+  gap: 10px;
+}
+
+.signup-image-section {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 100px;
+  z-index: 1;
+}
+
+.signup-image {
+  width: 650px;
+  height: 600px;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  border: 8px solid rgba(255, 255, 255, 0.1);
+}
+
+.signup-form-section {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: 10px;
+  padding-right: 200px;
+}
+
+.signup-card {
+  background: white;
+  padding: 50px 130px;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 650px;
+}
+
+.signup-card h2 {
+  margin: 0 0 15px 0;
+  color: #333;
+  font-size: 38px;
+  text-align: center;
+}
+
+.subtitle {
+  color: #666;
+  text-align: center;
+  margin: 0 0 35px 0;
+  font-size: 18px;
+}
+
+.form-group {
+  margin-bottom: 28px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 12px;
+  color: #333;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 16px 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 17px;
+  transition: border-color 0.3s;
+  box-sizing: border-box;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.form-group input.error {
+  border-color: #e74c3c;
+}
+
+.error-message {
+  color: #e74c3c;
+  font-size: 12px;
+  margin-top: 5px;
+  display: block;
+}
+
+.terms {
+  margin-bottom: 30px;
+}
+
+.terms label {
+  display: flex;
+  align-items: flex-start;
+  cursor: pointer;
+  font-size: 16px;
+  color: #666;
+}
+
+.terms input {
+  margin-right: 10px;
+  margin-top: 3px;
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+}
+
+.terms a {
+  color: #667eea;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.terms a:hover {
+  color: #764ba2;
+}
+
+.btn-primary {
+  width: 100%;
+  padding: 16px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 25px;
+  color: #666;
+  font-size: 17px;
+}
+
+.login-link a {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.login-link a:hover {
+  color: #764ba2;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 25px 0;
+  color: #999;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #ddd;
+}
+
+.divider span {
+  padding: 0 15px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.google-login {
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.google-login > div {
+  width: 100% !important;
+}
+
+@media (max-width: 1024px) {
+  .signup-image {
+    width: 600px;
+    height: 550px;
+  }
+  
+  .signup-form-section {
+    margin-left: -100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .signup-wrapper {
+    flex-direction: column;
+    min-height: auto;
+  }
+  
+  .signup-image-section {
+    width: 100%;
+    padding: 20px;
+    justify-content: center;
+  }
+  
+  .signup-image {
+    width: 100%;
+    max-width: 500px;
+    height: 400px;
+  }
+  
+  .signup-form-section {
+    width: 100%;
+    margin-left: 0;
+    margin-top: -50px;
+    padding: 0 20px 20px;
+    justify-content: center;
+  }
+  
+  .signup-card {
+    padding: 40px 30px;
+  }
+}
